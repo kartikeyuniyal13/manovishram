@@ -1,7 +1,13 @@
 {
-  "compilerOptions": {
-    "paths": {
-      "@/*": ["./*"]
-    }
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["./*"],
+        "@shared/*": ["shared/*"],
+        "@components/*": ["components/*"]
+      }
+    },
+    "include": ["next-env.d.ts", "**/**/*.jsx","**/*.js", "**/*.jsx"],
+  "exclude": ["node_modules"]
   }
-}
+  
